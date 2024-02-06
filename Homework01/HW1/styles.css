@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("imgs/water3.JPG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif; /* Changed font-family */
+    font-weight: 400;
+    color: #222; /* Changed text color */
+}
+
+/* Description Rules */
+.description-container {
+    min-height: 50vh;
+    font-size: 1.8em;
+}
+
+.description {
+    margin: 20vh auto; /* Adjusted margin */
+    padding: 2em;
+    text-align: center;
+    width: 70%;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.9); /* Changed background color */
+    color: #444; /* Changed text color */
+    border-radius: 10px; /* Added border-radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Added box-shadow */
+}
+
+@media (max-width: 865px) {
+    .description-container {
+        font-size: 1.5em;
+    }
+}
+
+/* Hero Image Rules */
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    background-image: url("imgs/water3.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adjusted box-shadow */
+}
+
+.hero .title {
+    font-size: 32pt; /* Adjusted font size */
+    color: #fff;
+    float: right;
+    margin-top: 150px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.8); /* Changed background color */
+    border-radius: 15px; /* Added border-radius */
+}
+
+.title h1, .title h2 {
+    font-family: 'Josefin Sans', sans-serif; /* Changed font-family */
+    font-weight: 600; /* Adjusted font-weight */
+}
+
+.hero .nav {
+    font-family: 'Josefin Sans', sans-serif; /* Changed font-family */
+    font-weight: 500; /* Adjusted font-weight */
+    color: #fff;
+    margin-top: 2em;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero .nav a {
+    flex-grow: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero .nav-item {
+    font-size: 0.8em; /* Adjusted font size */
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    text-align: center;
+    border: 2px solid #333; /* Adjusted border thickness */
+    border-radius: 8px; /* Added border-radius */
+}
+
+.hero .nav-item:hover {
+    color: #fff;
+    background-color: rgba(30, 30, 30, 0.8); /* Changed background color */
+    border-color: #fff; /* Changed border color */
+}
+
+@media (max-width: 865px) {
+    .hero {
+        min-height: 500px;
+    }
+    .hero .title {
+        font-size: 28pt; /* Adjusted font size */
+    }
+}
+
+@media (max-width: 585px) {
+    .hero {
+        min-height: 400px;
+    }
+    .hero .title {
+        font-size: 20pt; /* Adjusted font size */
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 445px) {
+    .hero .title {
+        font-size: 18pt; /* Adjusted font size */
+    }
+}
+
+/* Menu Rules */
+.menu {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 2em;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Raleway', sans-serif; /* Changed font-family */
+    font-weight: 400;
+    font-size: 1.6em; /* Adjusted font size */
+    text-align: center;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5); /* Adjusted box-shadow */
+}
+
+.menu h1 {
+    font-family: 'Raleway', sans-serif; /* Changed font-family */
+    font-weight: 600; /* Adjusted font-weight */
+}
+
+.menu .menu-group-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.menu .menu-group {
+    padding: 2em;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9); /* Changed background color */
+    color: #222; /* Changed text color */
+    border-radius: 10px; /* Added border-radius */
+    margin: 1em;
+}
+
+.menu .menu-head {
+    font-style: italic;
+    font-size: 2.2em; /* Adjusted font size */
+    padding: 1em;
+}
+
+.menu .menu-item {
+    text-align: left;
+    font-style: normal;
+    margin-top: 1em;
+}
