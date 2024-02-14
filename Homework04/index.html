@@ -1,0 +1,96 @@
+<html>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Rocky Trail")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+
+                myQuestion.innerHTML = "A rocky trail it is! Expect a rugged journey with breathtaking views. Are you ready for an adventure?";
+            }
+            else if(myChoice === "Grassy Path")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice3").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "Opting for the grassy path! Enjoy a serene stroll amidst lush greenery. Are you ready to immerse yourself in nature?";
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var answer = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "ROCK.jpg"
+                myQuestion.innerHTML = "Strap in for an unforgettable journey!";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "Perhaps another time then. Happy trails!";
+            }
+        }
+
+        function getChoice3()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "grassy_path.jpg"
+                myQuestion.innerHTML = "Let nature embrace you as you embark on this tranquil path!";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "No worries, the woods will await your return!";
+            }
+        }
+    </script>
+    <body>
+
+        <h1>Choose Your Path</h1>
+        <br>
+        <img src="WOODS.jpg" id="mainImage">
+        <div id="question">
+            <br>
+            Lost in the woods, you encounter a fork in the road.
+            <br>
+            One path is rocky, promising adventure and discovery.
+            <br>
+            The other is a grassy path, offering tranquility and peace.
+            <br>
+            Which trail do you choose?
+        </div>
+       
+        <br>
+        <input type="text" size="30" id="choice" value="Please enter 'Rocky Trail' or 'Grassy Path'">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="30" id="choice2" value="Enter 'yes' or 'no'" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice3" value="Enter 'yes' or 'no'"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+
+</html>
