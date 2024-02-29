@@ -1,0 +1,21 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Information</title>
+    <script>
+        function setCarInfo() {
+            var carInfo = {"make": "Tesla", "model": "Model 3", "year": "2022"};
+            document.getElementById("carInfo").innerHTML = "Make: " + carInfo.make + "<br>Model: " + carInfo.model + "<br>Year: " + carInfo.year;
+        }
+    </script>
+</head>
+
+<body onload="setCarInfo();">
+    <h1>Car Information</h1>
+    <div id="carInfo"></div>
+</body>
+
+</html>
