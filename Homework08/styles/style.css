@@ -1,0 +1,22 @@
+#rectangle {
+    width: 150px;
+    height: 80px;
+    background: purple;
+    position: absolute;
+    left: 20px;
+    top: 200px;
+  }
+  
+  .special {
+    background: cyan;
+    color: black;
+  }
+  
+  #fourth {
+    background: orange;
+    color: black;
+  }
+  
+  body {
+    background-color: lightgray;
+  }
