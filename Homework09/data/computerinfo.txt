@@ -1,0 +1,6 @@
+<computer>
+	<manufacturer>nvidia</manufacturer>
+	<model>laptop</model>
+	<year>2019</year>
+	<price>$1500</price>
+</computer>

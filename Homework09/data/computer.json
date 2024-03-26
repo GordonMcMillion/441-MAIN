@@ -1,0 +1,14 @@
+{
+    "manufacturer" : "Dell",
+    "model" : "8010",
+    "owner" : {
+        "firstName" : "paul",
+        "lastName" : "james"
+    },
+    "sizes" : [
+        "phone",
+        "laptop",
+        "towerPC",
+        "NasaComputer"
+    ]
+}
